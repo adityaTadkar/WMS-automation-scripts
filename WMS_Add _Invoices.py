@@ -2,7 +2,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import Select
-s=Service("C:\Driver\chromedriver")
+#s=Service("C:\Driver\chromedriver")
+s=Service(r"D:\Users\shara\Downloads\chromedriver_win32\chromedriver.exe")
 driver=webdriver.Chrome(service=s)
 driver.get('https://emiza-wms-dev.s3.ap-south-1.amazonaws.com/wms-dev/docs/EmizaWMS.html') #Gate_IN URL
 driver.implicitly_wait(5)
